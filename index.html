@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DARDANIA ELITE — CS2 Server nga Kosova</title>
+  <meta name="description" content="DARDANIA ELITE CS2 — server publik nga Kosova. Ping i mirë, hyrje falas, staf aktiv. Lidhu tani!">
+  <meta property="og:title" content="DARDANIA ELITE CS2">
+  <meta property="og:description" content="Server CS2 nga Kosova — ping i mirë, hyrje falas.">
+  <meta property="og:image" content="assets/img/dardania_full_1024.png">
+  <link rel="icon" href="assets/img/dardania.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ambient background layers -->
+  <div class="bg-stars" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--red" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--gold" aria-hidden="true"></div>
+
+  <!-- ================= NAV ================= -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#top">
+        <img class="brand-logo" src="assets/img/dardania_mark_128.png" alt="Dardania Elite logo">
+        <span class="brand-name">DARDANIA <span class="accent">ELITE</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#serveri" data-snd>Shtëpia</a>
+        <a href="#statistika" data-snd>Statistikat</a>
+        <a href="#top" data-snd>Top 10</a>
+        <a href="#banat" data-snd>Banat</a>
+        <a href="#rregullat" data-snd>Rregullat</a>
+        <a href="#stafi" data-snd>Stafi</a>
+        <a class="btn-discord-nav" href="https://discord.gg/FQdpMCfDRK" target="_blank" rel="noopener" data-snd>Discord</a>
+      </div>
+      <button class="nav-burger" id="navBurger" aria-label="Menu" data-snd>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header class="hero" id="top">
+    <div class="hero-inner reveal">
+      <div class="hero-logo-wrap">
+        <img class="hero-logo" src="assets/img/dardania_full_1024.png" alt="Dardania Elite CS2">
+      </div>
+      <h1 class="hero-title">
+        <span class="line">DARDANIA</span>
+        <span class="line line--sub">ELITE <em>CS2</em> SERVER</span>
+      </h1>
+      <p class="hero-tag">Server publik nga Kosova &mdash; ping i mirë, hyrje falas, staf aktiv 24/7.</p>
+      <div class="hero-cta">
+        <a class="btn btn--primary" href="steam://connect/IP_ADRESA:27015" id="btnConnect" data-snd>Lidhu me Serverin</a>
+        <a class="btn btn--ghost" href="https://discord.gg/FQdpMCfDRK" target="_blank" rel="noopener" data-snd>Bashkohu në Discord</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge-pill"><i class="dot dot--green"></i> <span id="heroOnline">—</span> online</span>
+        <span class="badge-pill"><i class="dot dot--gold"></i> 64 slot</span>
+        <span class="badge-pill"><i class="dot dot--red"></i> Anti-Cheat aktiv</span>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span></span>
+    </div>
+  </header>
+
+  <!-- ================= SERVER CARD ================= -->
+  <section class="section" id="serveri">
+    <h2 class="section-title reveal">Serveri <span class="accent">Ynë</span></h2>
+    <p class="section-sub reveal">Kopjo IP-në dhe lidhu direkt &mdash; pa fart, pa pritje.</p>
+
+    <div class="server-card reveal">
+      <div class="server-card-side">
+        <img class="server-map" src="assets/img/dardania_banner_960x540.png" alt="Dardania Elite server">
+      </div>
+      <div class="server-card-main">
+        <div class="server-name">DARDANIA ELITE <span class="accent">PUBLIC</span></div>
+        <div class="server-meta">
+          <span class="server-players"><i class="dot dot--green"></i> <span id="serverPlayers">0/64</span> lojtarë</span>
+          <span class="server-mode">Competitive &bull; de_dust2</span>
+        </div>
+        <div class="server-ip-row">
+          <code class="server-ip" id="serverIp">IP_ADRESA:27015</code>
+          <button class="btn btn--small" id="btnCopyIp" data-snd>Kopjo IP</button>
+        </div>
+        <div class="server-actions">
+          <a class="btn btn--primary" href="steam://connect/IP_ADRESA:27015" data-snd>Lidhu</a>
+          <a class="btn btn--ghost" href="https://discord.gg/FQdpMCfDRK" target="_blank" rel="noopener" data-snd>Raporto Cheater</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="section" id="statistika">
+    <h2 class="section-title reveal">Statistika <span class="accent">Live</span></h2>
+    <p class="section-sub reveal">Numrat përditësohen automatikisht nga serveri.</p>
+    <div class="stats-grid">
+      <div class="stat-card reveal"><div class="stat-value" data-count="0" id="statPlayers">0</div><div class="stat-label">Lojtarë Total</div></div>
+      <div class="stat-card reveal"><div class="stat-value" data-count="0" id="statOnline">0</div><div class="stat-label">Online Tani</div></div>
+      <div class="stat-card reveal stat-card--red"><div class="stat-value" data-count="0" id="statBans">0</div><div class="stat-label">Bane</div></div>
+      <div class="stat-card reveal"><div class="stat-value" data-count="0" id="statMutes">0</div><div class="stat-label">Mute</div></div>
+      <div class="stat-card reveal"><div class="stat-value" data-count="0" id="statGags">0</div><div class="stat-label">Gag</div></div>
+      <div class="stat-card reveal stat-card--gold"><div class="stat-value" data-count="0" id="statHs">0</div><div class="stat-label">Headshot-e</div></div>
+    </div>
+  </section>
+
+  <!-- ================= TOP 10 ================= -->
+  <section class="section" id="top">
+    <h2 class="section-title reveal">Top <span class="accent">10</span></h2>
+    <p class="section-sub reveal">Lojtarët me më shumë pikë &mdash; MVP +10, vrasje +4, headshot +5.</p>
+    <div class="top-list" id="topList">
+      <div class="top-empty reveal">Regjistrohu në server dhe bëhu i pari në listë!</div>
+    </div>
+  </section>
+
+  <!-- ================= BANAT & LOGJE ================= -->
+  <section class="section" id="banat">
+    <h2 class="section-title reveal">Banat & <span class="accent">Logje</span></h2>
+    <p class="section-sub reveal">Transparencë totale — çdo ndëshkim publik. Përditësohet automatikisht.</p>
+
+    <div class="ban-grid">
+      <div class="ban-col reveal">
+        <h3 class="ban-h3">Bane Aktive</h3>
+        <div class="ban-table-wrap">
+          <table class="log-table" id="bansTable">
+            <thead><tr><th>Lojtari</th><th>Arsyeja</th><th>Nga</th><th>Deri</th></tr></thead>
+            <tbody id="bansBody"><tr><td colspan="4" class="log-empty">Duke ngarkuar&hellip;</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="ban-col reveal">
+        <h3 class="ban-h3">Logjet e Fundit</h3>
+        <div class="ban-table-wrap">
+          <table class="log-table" id="logsTable">
+            <thead><tr><th>Koha</th><th>Tipi</th><th>Lojtari</th><th>Arsyeja</th></tr></thead>
+            <tbody id="logsBody"><tr><td colspan="4" class="log-empty">Duke ngarkuar&hellip;</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RULES ================= -->
+  <section class="section" id="rregullat">
+    <h2 class="section-title reveal">Rregullat e <span class="accent">Serverit</span></h2>
+    <p class="section-sub reveal">Rregullat vlejnë për të gjithë &mdash; pa përjashtim.</p>
+    <div class="rules-grid">
+      <div class="rule-card reveal"><span class="rule-num">01</span><h3>Pa Cheata</h3><p>Wallhack, Aimbot, Spinbot ose çfarëdo do cheer = <strong>ban permanent</strong> + kontroll PC për unban.</p></div>
+      <div class="rule-card reveal"><span class="rule-num">02</span><h3>Respekt</h3><p>Nuk përdoret sharje ose ofendim ndaj lojtarëve dhe stafit. Rikujtesa e parë: <strong>mute/gag</strong>.</p></div>
+      <div class="rule-card reveal"><span class="rule-num">03</span><h3>Pa Teaming</h3><p>Teaming mes T dhe CT është e ndaluar. Loja luhet siç duhet.</p></div>
+      <div class="rule-card reveal"><span class="rule-num">04</span><h3>Pa Camping</h3><p>AFK ose camping 20 sekonda &mdash; sistemi të kalon automatikisht në <strong>Spectator</strong>.</p></div>
+      <div class="rule-card reveal"><span class="rule-num">05</span><h3>Bomb & Pikë</h3><p>Bombë marrë &minus;2 pikë, bombë hedhur &minus;2 pikë. Luaj me kokë.</p></div>
+      <div class="rule-card reveal"><span class="rule-num">06</span><h3>Unban</h3><p>Për unban hap biletë në Discord. Bëjmë kontroll PC &mdash; përveç nëse stafi ka <strong>klip</strong> të cheatit.</p></div>
+    </div>
+  </section>
+
+  <!-- ================= STAFF ================= -->
+  <section class="section" id="stafi">
+    <h2 class="section-title reveal">Stafi & <span class="accent">Rangu</span></h2>
+    <p class="section-sub reveal">Dëshiron të bëhesh pjesë e stafit? Apliko në Discord.</p>
+    <div class="staff-grid">
+      <div class="staff-card staff-card--owner reveal">
+        <img class="staff-logo" src="assets/img/dardania_mark_128.png" alt="">
+        <div class="staff-rank">KRIJUESI / OWNER</div>
+        <div class="staff-name">Balenciaga</div>
+        <div class="staff-desc">Themeluesi i serverit. Fjala e fundit për çdo vendim.</div>
+      </div>
+      <div class="staff-card reveal"><div class="staff-rank">CO-OWNER</div><div class="staff-name">&mdash;</div><div class="staff-desc">Zëvendës i plotë i ownerit. Ka !banip.</div></div>
+      <div class="staff-card reveal"><div class="staff-rank">ADMIN</div><div class="staff-name">&mdash;</div><div class="staff-desc">Ban permanent, mute, gag, give, slap.</div></div>
+      <div class="staff-card reveal"><div class="staff-rank">STAFF</div><div class="staff-name">&mdash;</div><div class="staff-desc">Mute, gag, kick, ban deri 1 vit (pa permanent).</div></div>
+    </div>
+    <div class="staff-cta reveal">
+      <p>Apliko për <strong>Admin / Staff</strong> direkt në Discord &mdash; trego orarin tënd dhe përvojën.</p>
+      <a class="btn btn--primary" href="https://discord.gg/FQdpMCfDRK" target="_blank" rel="noopener" data-snd>Apliko në Discord</a>
+    </div>
+  </section>
+
+  <!-- ================= DISCORD BANNER ================= -->
+  <section class="discord-banner reveal">
+    <img class="discord-banner-logo" src="assets/img/dardania_mark_256.png" alt="">
+    <div class="discord-banner-text">
+      <h3>Bashkohu në <span class="accent">Discord</span> ynë</h3>
+      <p>Lajme, biletë për unban, raportim cheater-sh, aplikime për admin &mdash; të gjitha në një vend.</p>
+      <a class="btn btn--discord" href="https://discord.gg/FQdpMCfDRK" target="_blank" rel="noopener" data-snd>discord.gg/FQdpMCfDRK</a>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/img/dardania_mark_128.png" alt="">
+        <span>DARDANIA <span class="accent">ELITE</span></span>
+      </div>
+      <div class="footer-links">
+        <a href="#serveri" data-snd>Serveri</a>
+        <a href="#rregullat" data-snd>Rregullat</a>
+        <a href="https://discord.gg/FQdpMCfDRK" target="_blank" rel="noopener" data-snd>Discord</a>
+      </div>
+      <div class="footer-copy">
+        <span>Krijuesi: <strong>Balenciaga</strong></span>
+        <span>Server nga Kosova &bull; Hynje falas &bull; Ping i mirë</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- toast -->
+  <div class="toast" id="toast">IP u kopjua!</div>
+
+  <!-- sound toggle -->
+  <button class="sound-toggle" id="soundToggle" title="Zëri ndez/fik" data-snd>&#9834;</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
