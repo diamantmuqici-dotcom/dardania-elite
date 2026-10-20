@@ -1,1 +1,29 @@
-[]
+[
+    {
+        "at":  1792446547,
+        "until":  0,
+        "player":  "TestPlayer",
+        "by":  "ollie",
+        "type":  "kick",
+        "reason":  "smoke test",
+        "steamId":  "76561190000000001"
+    },
+    {
+        "at":  1792446009,
+        "until":  1792532409,
+        "player":  "WebTestTarget",
+        "by":  "Owner",
+        "type":  "webban",
+        "reason":  "cheating aimbot",
+        "steamId":  "76561190000000002"
+    },
+    {
+        "at":  1792446009,
+        "until":  0,
+        "player":  "WebTestTarget",
+        "by":  "Owner",
+        "type":  "unban",
+        "reason":  "",
+        "steamId":  "76561190000000002"
+    }
+]
