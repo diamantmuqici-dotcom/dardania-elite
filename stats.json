@@ -1,1 +1,18 @@
-{"playersTotal":0,"onlineNow":0,"bans":0,"mutes":0,"gags":0,"kicks":0,"headshots":0,"serverIp":"","serverName":"DARDANIA ELITE PUBLIC","map":"de_dust2","top":[]}
+{
+    "bans":  1,
+    "playersTotal":  1,
+    "gags":  3,
+    "serverName":  "DARDANIA ELITE PUBLIC",
+    "mutes":  1,
+    "serverIp":  "",
+    "kicks":  2,
+    "onlineNow":  0,
+    "map":  "de_dust2",
+    "top":  [
+                {
+                    "name":  "ᴜᴋ ᴘᴇᴇᴋ Balenciaga",
+                    "points":  312
+                }
+            ],
+    "headshots":  21
+}
